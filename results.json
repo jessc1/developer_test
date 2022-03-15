@@ -1,0 +1,9 @@
+http://127.0.0.1:8000/surveys?format=json
+[{"id":4,"title":"Vegan","creator":1},{"id":5,"title":"Calciferol","creator":1}]
+
+http://127.0.0.1:8000/questions?format=json
+[{"id":1,"question":"Is carmin vegan?","survey":4}]
+
+http://127.0.0.1:8000/alternatives/?format=json
+[{"id":1,"alternative":"yes","useralternative":"no","question":1},
+
