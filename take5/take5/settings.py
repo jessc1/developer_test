@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'survey',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'take5.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE'  : 'django.db.backends.mysql',  
-        'NAME'    : 'survey',                
+        'NAME'    : '',                
         'USER'    : '',                     
         'PASSWORD': '',            
         'HOST'    : 'localhost',                
