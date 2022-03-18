@@ -2,6 +2,9 @@
 
 user can add the survey, question and alternative
 
+## deploy:
+https://djangosurveyapi.herokuapp.com/
+
 
 to apply database 
 ```
