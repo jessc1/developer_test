@@ -14,7 +14,7 @@ class SurveyQuestionAdmin(admin.ModelAdmin):
 
 @admin.register(SurveyQuestionAlternative)
 class SurveyQuestionAlternativeAdmin(admin.ModelAdmin):
-    list_display = ('alternative',)
+    list_display = ('alternative', 'question',)
     
 
 
