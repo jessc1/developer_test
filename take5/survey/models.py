@@ -30,19 +30,9 @@ class SurveyQuestionAlternative(models.Model):
     question = models.ForeignKey(SurveyQuestion, on_delete=models.CASCADE)
     alternative = models.CharField(max_length=255)
     useralternative = models.CharField(max_length=3)
-
-    def __str__(self):
-        return self.alternative
-
-
-class SurveyUserAnswer(models.Model):
-    """An answer in a survey's questions."""
-
-    question = models.ForeignKey(SurveyQuestion, on_delete=models.CASCADE)
-    answer= models.CharField(max_length=1)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.answer
-
     
+    def __str__(self):
+        return "{} ({})".format(self.useralternative, self.question)
+
+
+
